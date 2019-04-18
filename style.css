@@ -1,0 +1,121 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  background: #333;
+  color: #fff;
+}
+html {
+  background: #fff;
+  min-height: 100%;
+}
+body {
+  font: 400 18px/1.6 Georgia, Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+  color: #333;
+  margin: 50px 0;
+}
+a {
+  text-decoration: none;
+  color: #0088cc;
+  word-wrap: break-word;
+}
+a:hover {
+  text-decoration: underline;
+}
+a::selection {
+  background: #0088cc;
+  color: #fff;
+}
+.code-html {
+  color: #D1DCE9;
+  font-family: Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+}
+.wrap {
+  width: 770px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  padding-bottom: 40px;
+}
+.wrap .content {
+  padding: 8px 0;
+}
+.wrap.aboutme {
+  -webkit-animation: fade-in-up 700ms 0ms ease-in-out both;
+  animation: fade-in-up 700ms 0ms ease-in-out both;
+}
+@-webkit-keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(80px);
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.wrap.aboutme .content {
+  font-size: 48px;
+  line-height: 1.2;
+}
+.wrap.working {
+  -webkit-animation: fade-in-up 700ms 200ms ease-in-out both;
+  animation: fade-in-up 700ms 200ms ease-in-out both;
+}
+@-webkit-keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.wrap.working .content {
+  font-size: 22px;
+}
+.wrap.links {
+  -webkit-animation: fade-in-up 700ms 400ms ease-in-out both;
+  animation: fade-in-up 700ms 400ms ease-in-out both;
+}
+@-webkit-keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.wrap.links .content {
+  list-style: none;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  body {
+    margin: 10px 20px;
+  }
+  .wrap {
+    width: 100%;
+  }
+  .wrap.aboutme .content {
+    font-size: 40px;
+  }
+  .wrap.working .content {
+    font-size: 20px;
+  }
+  .wrap.links .content {
+    font-size: 18px;
+  }
+}
